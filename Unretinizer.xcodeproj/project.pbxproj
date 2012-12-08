@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C8654DC1671283F001338C4 /* AppCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8654DB1671283F001338C4 /* AppCellView.m */; };
+		9C8654E016712C0E001338C4 /* SOFileSizeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8654DF16712C0E001338C4 /* SOFileSizeFormatter.m */; };
 		9C90FE751670472300B60BB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C90FE741670472300B60BB6 /* Cocoa.framework */; };
 		9C90FE7F1670472300B60BB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C90FE7D1670472300B60BB6 /* InfoPlist.strings */; };
 		9C90FE811670472300B60BB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90FE801670472300B60BB6 /* main.m */; };
@@ -17,6 +19,7 @@
 		9C90FE941670472300B60BB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C90FE741670472300B60BB6 /* Cocoa.framework */; };
 		9C90FE9C1670472300B60BB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C90FE9A1670472300B60BB6 /* InfoPlist.strings */; };
 		9C90FE9F1670472300B60BB6 /* UnretinizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90FE9E1670472300B60BB6 /* UnretinizerTests.m */; };
+		9C90FEAA16706E7D00B60BB6 /* FoundApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90FEA916706E7D00B60BB6 /* FoundApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C8654DA1671283F001338C4 /* AppCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCellView.h; sourceTree = "<group>"; };
+		9C8654DB1671283F001338C4 /* AppCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCellView.m; sourceTree = "<group>"; };
+		9C8654DE16712C0E001338C4 /* SOFileSizeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOFileSizeFormatter.h; sourceTree = "<group>"; };
+		9C8654DF16712C0E001338C4 /* SOFileSizeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOFileSizeFormatter.m; sourceTree = "<group>"; };
 		9C90FE701670472200B60BB6 /* Unretinizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unretinizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C90FE741670472300B60BB6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C90FE771670472300B60BB6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +56,8 @@
 		9C90FE9B1670472300B60BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C90FE9D1670472300B60BB6 /* UnretinizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnretinizerTests.h; sourceTree = "<group>"; };
 		9C90FE9E1670472300B60BB6 /* UnretinizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnretinizerTests.m; sourceTree = "<group>"; };
+		9C90FEA816706E7D00B60BB6 /* FoundApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundApp.h; sourceTree = "<group>"; };
+		9C90FEA916706E7D00B60BB6 /* FoundApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundApp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,12 @@
 			children = (
 				9C90FE861670472300B60BB6 /* AppDelegate.h */,
 				9C90FE871670472300B60BB6 /* AppDelegate.m */,
+				9C90FEA816706E7D00B60BB6 /* FoundApp.h */,
+				9C90FEA916706E7D00B60BB6 /* FoundApp.m */,
+				9C8654DA1671283F001338C4 /* AppCellView.h */,
+				9C8654DB1671283F001338C4 /* AppCellView.m */,
+				9C8654DE16712C0E001338C4 /* SOFileSizeFormatter.h */,
+				9C8654DF16712C0E001338C4 /* SOFileSizeFormatter.m */,
 				9C90FE891670472300B60BB6 /* MainMenu.xib */,
 				9C90FE7B1670472300B60BB6 /* Supporting Files */,
 			);
@@ -263,6 +278,9 @@
 			files = (
 				9C90FE811670472300B60BB6 /* main.m in Sources */,
 				9C90FE881670472300B60BB6 /* AppDelegate.m in Sources */,
+				9C90FEAA16706E7D00B60BB6 /* FoundApp.m in Sources */,
+				9C8654DC1671283F001338C4 /* AppCellView.m in Sources */,
+				9C8654E016712C0E001338C4 /* SOFileSizeFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +464,7 @@
 				9C90FEA41670472300B60BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C90FEA51670472300B60BB6 /* Build configuration list for PBXNativeTarget "UnretinizerTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +473,7 @@
 				9C90FEA71670472300B60BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
