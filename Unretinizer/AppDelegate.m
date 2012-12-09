@@ -50,13 +50,13 @@
                 if ([filename rangeOfString:@"@2x"].location != NSNotFound) {
                     [foundApp.retinaFiles addObject:filename];
                     foundApp.size += [[[NSFileManager defaultManager] attributesOfItemAtPath:filename error:nil] fileSize];
-                    totalSize += foundApp.size;                    
                 }
             };
             
             if (([foundApp.retinaFiles count] > 0) && (foundApp.size > 0)) {
                 foundApp.path = itemPath;
                 [foundApps addObject:foundApp];
+                totalSize += foundApp.size;
             }
         }
 	}];
@@ -94,6 +94,20 @@
 - (void)showResults {
     [window setFrame:NSMakeRect(window.frame.origin.x, window.frame.origin.y, listView.frame.size.height, listView.frame.size.width) display:YES animate:YES];
     [window setContentView:listView];
+}
+
+- (IBAction)removeSelected:(id)sender {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:@"OK"];
+    [alert addButtonWithTitle:@"Cancel"];
+    [alert setMessageText:@"Remove retina files?"];
+    [alert setInformativeText:@"Deleted files cannot be restored."];
+    [alert setAlertStyle:NSWarningAlertStyle];
+    [alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+}
+
+- (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+    
 }
 
 #pragma mark NSTableView
